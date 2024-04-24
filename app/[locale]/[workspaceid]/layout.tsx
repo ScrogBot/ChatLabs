@@ -204,11 +204,11 @@ export default function WorkspaceLayout({ children }: WorkspaceLayoutProps) {
     setChatSettings({
       model: (chatSettings?.model ||
         workspace?.default_model ||
-        "gpt-3.5-turbo-0125") as LLMID,
+        "gpt-4 Turbo") as LLMID,
       prompt:
         // chatSettings?.prompt ||
         workspace?.default_prompt ||
-        "You are a friendly, helpful AI assistant.",
+        "",
       temperature:
         // chatSettings?.temperature ||
         workspace?.default_temperature || 0.5,
