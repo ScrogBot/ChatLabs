@@ -207,8 +207,7 @@ export default function WorkspaceLayout({ children }: WorkspaceLayoutProps) {
         "gpt-4 Turbo") as LLMID,
       prompt:
         // chatSettings?.prompt ||
-        workspace?.default_prompt ||
-        "",
+        workspace?.default_prompt || "",
       temperature:
         // chatSettings?.temperature ||
         workspace?.default_temperature || 0.5,
